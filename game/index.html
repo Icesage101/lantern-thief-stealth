@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lantern Thief — a top-down stealth game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0e1a; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: Georgia, 'Times New Roman', serif; }
+  #wrap { position: relative; width: 960px; }
+  canvas { display: block; width: 960px; height: 640px; background: #141824; border: 2px solid #3a2f1e; }
+  #hint { color: #9a8f7a; font-size: 13px; text-align: center; margin-top: 8px; font-family: Georgia, serif; }
+  #hint b { color: #e8c96a; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="640"></canvas>
+  <div id="hint">Move <b>WASD / arrows</b> &middot; hold <b>Shift</b> to sneak &middot; grab the loot, then reach the <b>green exit</b> unseen &middot; <b>M</b> mute &middot; <b>R</b> restart level</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
